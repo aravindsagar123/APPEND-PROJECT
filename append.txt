@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    
+</head>
+<body>
+    <p> paragraph..</p>
+    <p> paragaraph 2...</p>
+    <ol>
+        <li>item no 1</li>
+        <li>item no 2</li>
+        <li>item no 3</li>
+    </ol>
+
+
+    <button id="btn1">appered text </button>
+    <button id="btn2"> appered text </button>
+
+</body>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("p").append("<b>newly added appended text</b>.");
+
+        });
+        $("#btn2").click(function(){
+            $("ol").append("<li><b>newly added appended text</b></li>.");
+    });
+});
+</script>
+</html>
